@@ -1,0 +1,72 @@
+:root {
+    --red: hsl(1, 90%, 64%);
+    --blue: hsl(219, 85%, 26%);
+    --white: hsl(0, 0%, 100%);
+    --veryLightGrayishBlue: hsl(210, 60%, 98%);
+    --lightGrayishBlue1: hsl(211, 68%, 94%);
+    --lightGrayishBlue2: hsl(205, 33%, 90%);
+    --grayishBlue: hsl(219, 14%, 63%);
+    --darkGrayishBlue: hsl(219, 12%, 42%);
+    --veryDarkBlue: hsl(224, 21%, 14%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: PlusJakartaSans;
+    src: url('assets/fonts/static/PlusJakartaSans-Medium.ttf');
+}
+
+@font-face {
+    font-family: PlusJakartaSansExtraBold;
+    src: url('assets/fonts/static/PlusJakartaSans-ExtraBold.ttf');
+}
+
+body {
+    font-family: PlusJakartaSans;
+    font-size: 16px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem;
+    margin-top: 1.3rem;
+}
+
+h1 {
+    font-size: 1.2rem;
+    font-family: PlusJakartaSansExtraBold;
+}
+
+h2 {
+    font-size: 1rem;
+    color: var(--darkGrayishBlue);
+    font-weight: normal;
+}
+
+.number {
+    color: var(--white);
+    background-color: var(--blue);
+    font-size: 0.9rem;
+    padding: 0.2rem 0.7rem;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.comment-unread {
+    list-style: none;
+    background-color: var(--veryLightGrayishBlue);
+    padding: 0.5rem 0.7rem;
+    margin: 1rem;
+    border-radius: 8px;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); }
